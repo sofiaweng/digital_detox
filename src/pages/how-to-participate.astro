@@ -1,0 +1,107 @@
+---
+import MainLayout from "../components/Header.astro";
+import Sektion from "../components/Sektion.astro";
+import Button from "../components/Button.astro";
+import Footer from "../components/Footer.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import thumbsup from "../assets/images/thumbsup.png";
+---
+
+<MainLayout title="Titel">
+  <Sektion>
+    <div>
+      <h1>Sådan laver man en digital oprydning</h1>
+      <p>
+        Companies and organisations can make changes in everyday work flow that
+        help reduce the ecological footprint of digital systems significantly.
+        This requires a little time and willingness to make strategic decisions
+        and implement simple changes. When you think of your workflow, you must
+        evaluate what does and does not work, then assess how you can make the
+        system work better for everyone.
+      </p>
+    </div>
+    <div>
+      <button>Til virksomheder</button>
+      <button>Til enkeltpersoner</button>
+    </div>
+  </Sektion>
+
+  <Sektion>
+    <h3>Digital oprydning for virksomheder</h3>
+    <h2>Hvorfor skal min virksomhed deltage?</h2>
+    <div>
+      <Image src={thumbsup} alt="" />
+      <p>
+        By tackling your digital footprint issue head-on, you reduce your
+        organisations environmental load, creating instead a much more
+        sustainable workflow.
+      </p>
+    </div>
+    <div>
+      <Image src={thumbsup} alt="" />
+      <p>
+        By tackling your digital footprint issue head-on, you reduce your
+        organisations environmental load, creating instead a much more
+        sustainable workflow.
+      </p>
+    </div>
+    <div>
+      <Image src={thumbsup} alt="" />
+      <p>
+        By tackling your digital footprint issue head-on, you reduce your
+        organisations environmental load, creating instead a much more
+        sustainable workflow.
+      </p>
+    </div>
+    <div>
+      <Image src={thumbsup} alt="" />
+      <p>
+        By tackling your digital footprint issue head-on, you reduce your
+        organisations environmental load, creating instead a much more
+        sustainable workflow.
+      </p>
+    </div>
+    <div>
+      <Image src={thumbsup} alt="" />
+      <p>
+        By tackling your digital footprint issue head-on, you reduce your
+        organisations environmental load, creating instead a much more
+        sustainable workflow.
+      </p>
+    </div>
+    <div>
+      <Image src={thumbsup} alt="" />
+      <p>
+        By tackling your digital footprint issue head-on, you reduce your
+        organisations environmental load, creating instead a much more
+        sustainable workflow.
+      </p>
+    </div>
+  </Sektion>
+
+  <Sektion>
+    <h2>Sådan reducerer du sin organisations digitale fodaftryk</h2>
+    <div>
+      <div>
+        <h3>step</h3>
+        <h3>titel</h3><p>tekst</p>
+      </div>
+      <div>
+        <h3>step</h3>
+        <h3>titel</h3>
+        <p>tekst</p>
+      </div>
+      <div>
+        <h3>step</h3>
+        <h3>titel</h3>
+        <p>tekst</p>
+      </div>
+      <div>
+        <h3>step</h3>
+        <h3>titel</h3>
+        <p>tekst</p>
+      </div>
+    </div>
+  </Sektion>
+</MainLayout>
