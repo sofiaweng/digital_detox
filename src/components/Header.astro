@@ -1,19 +1,21 @@
 ---
 import Link from '../components/Link.astro'
 import { Image } from 'astro:assets';
-import whitelogo from "../assets/images/white_logo.png";
+import whitelogo from "src/assets/images/white_logo.png";
 ---
 
 
 <div>
     <div x-data="{ showmenu: false }" class="  lg:static w-full bg-[#052F45] text-[#F7F7F7]" >
-        <div id="navbar" class=" p-4 py-7 flex flex-row justify-between">
+        <div id="navbar" class=" p-4  flex flex-row justify-between">
         <div id="logo" class="">
         <a href="#">
-            <img src="../assets/images/white_logo.png" alt="logo">
+            <!-- <Image src={whitelogo} alt="" /> -->
+            <img class="w-20" src="src/assets/images/white_logo.png" alt="logo">
+          
         </a>
         </div>
-        <nav id="desktopmenu" class="hidden lg:block font-semibold text-sm">
+        <nav id="desktopmenu" class="hidden lg:block font-semibold text-sm self-center">
         <ul class="flex flex-row gap-8">
         <li class=""> <a href="/">SÅDAN DELTAGER DU</a></li><!-- alternativt: lav et <a href="">Link</a>, hvis du ikke vil bruge Link.astro komponenten -->
         <li class=""><a href="/formular">REGISTRER DIT BIDRAG</a></li>
