@@ -24,20 +24,36 @@ import whitelogo from "src/assets/images/white_logo.png";
         <li class=""><a href="#" >WORLD CLEANING DAY</a></li>
         </ul>
         </nav>
-        <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button>
+        <!-- <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button> -->
         </div>
-        <nav id="mobilmenu" class="flex flex-col content-center pt-4  text-[#052F45] bg-[#F7F7F7] " 
+        <div id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu" >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav id="mobilmenu" class="flex flex-col content-center   text-[#052F45] bg-[#F7F7F7] " 
         x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
         <ul >
-        <img src="/assets/images/bluepixels-right.svg" alt="pixels">
+            <img class="w-1/3  absolute right-0" src="src/assets/images/bluepixels-up-right.svg" alt="pixels">
         <li class="p-4 border-b-2"><a href="/">SÅDAN DELTAGER DU</a></li>
         <li class="p-4  border-b-2"><a href="/formular">REGISTRER DIT BIDRAG</a></li>
         <li class="p-4  border-b-2"><a href="/ressourcer" >RESSOURCER</a></li>
         <li class="p-4 border-b-2"><a href="#" >LÆRINGSCENTER</a></li>
         <li class="p-4 border-b-2"><a href="#" >WORLD CLEANING DAY</a></li>
-        
+         <img class="w-2/4  mt-2 " src="src/assets/images/bluepixels-down-left.svg" alt="pixels">
         </ul>
         </nav>
         </div>
 </div>
 
+<script>
+    /* //set active class on nav when the page is active */
+const nav = document.querySelector(".desktopmenu");
+const navLinks = nav.querySelectorAll("a");
+const currentURL = window.location.href;
+navLinks.forEach((link) =>{
+    if (link.href === currentURL){
+         link.classList.add("active")
+    }
+});
+</script>
