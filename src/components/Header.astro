@@ -1,12 +1,14 @@
 ---
 import Link from '../components/Link.astro'
+import { Image } from 'astro:assets';
+import whitelogo from "../assets/images/white_logo.png";
 ---
 <div>
-    <div x-data="{ showmenu: false }" class="p-4 static lg:static w-full bg-slate-200" >
-        <div id="navbar" class="flex flex-row justify-between">
+    <div x-data="{ showmenu: false }" class="p-4 static lg:static w-full bg-[#052F45] text-[#F7F7F7]" >
+        <div id="navbar" class="flex flex-row justify-between ">
         <div id="logo" class="">
         <a href="#link1">
-            <img src=".../white_logo.png" alt="">
+            <Image src={whitelogo} alt=""></Image>
         </a>
         </div>
         <nav id="desktopmenu" class="hidden lg:block">
