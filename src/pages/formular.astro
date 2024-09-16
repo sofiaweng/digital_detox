@@ -1,0 +1,95 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+import tailwind from "../tailwind.css";
+// import thumbsup from "../assets/images/thumbsup.png";
+---
+
+
+<section id="kob-nu">
+	<div class="mt-8">
+	  <h2 class="text-4xl font-semibold mb-6 text-center uppercase text-yellow-600">Køb 'Københavnerbilleder' nu!</h2>
+	</div>
+  </section>
+  
+  <form action="#" method="post" class="max-w-2xl mx-auto p-6 border-2 border-gray-400 shadow-md space-y-4 mb-12 bg-gray-900 text-white">
+	<!-- Antal input -->
+	<div>
+	  <label for="antal" class="block text-sm font-medium text-white">Antal:</label>
+	  <input type="number" id="antal" name="antal" placeholder="Angiv antal"
+		class="mt-1 block w-full rounded-md border-gray-600 bg-gray-800 text-white placeholder-gray-400 shadow-sm focus:border-yellow-600 focus:ring focus:ring-yellow-500 focus:ring-opacity-50" required>
+	</div>
+  
+	<!-- Levering input -->
+	<fieldset>
+	  <legend class="text-sm font-medium text-white">Levering:</legend>
+	  <div class="flex items-center">
+		<input type="radio" id="levering1" name="levering" value="PostNord" checked
+		  class="h-4 w-4 text-yellow-600 border-gray-600 focus:ring-yellow-600">
+		<label for="levering1" class="ml-2 text-sm text-white">PostDK</label>
+	  </div>
+	  <div class="flex items-center mt-2">
+		<input type="radio" id="levering2" name="levering" value="Afhent selv"
+		  class="h-4 w-4 text-yellow-600 border-gray-600 focus:ring-yellow-600">
+		<label for="levering2" class="ml-2 text-sm text-white">Afhent</label>
+	  </div>
+	</fieldset>
+  
+	<!-- Navn input -->
+	<div>
+	  <label for="navn" class="block text-sm font-medium text-white">Navn:</label>
+	  <input type="text" id="navn" name="navn" placeholder="Dit navn"
+		class="mt-1 block w-full rounded-md border-gray-600 bg-gray-800 text-white placeholder-gray-400 shadow-sm focus:border-yellow-600 focus:ring focus:ring-yellow-500 focus:ring-opacity-50" required>
+	</div>
+  
+	<!-- Adresse input -->
+	<div>
+	  <label for="adresse" class="block text-sm font-medium text-white">Adresse:</label>
+	  <input type="text" id="adresse" name="adresse" placeholder="Din adresse"
+		class="mt-1 block w-full rounded-md border-gray-600 bg-gray-800 text-white placeholder-gray-400 shadow-sm focus:border-yellow-600 focus:ring focus:ring-yellow-500 focus:ring-opacity-50" required>
+	</div>
+  
+	<!-- E-mail input -->
+	<div>
+	  <label for="email" class="block text-sm font-medium text-white">E-mail:</label>
+	  <input type="email" id="email" name="email" placeholder="Din e-mail"
+		class="mt-1 block w-full rounded-md border-gray-600 bg-gray-800 text-white placeholder-gray-400 shadow-sm focus:border-yellow-600 focus:ring focus:ring-yellow-500 focus:ring-opacity-50" required>
+	</div>
+  
+	<!-- Postnummer input -->
+	<div>
+	  <label for="postnummer" class="block text-sm font-medium text-white">Postnummer:</label>
+	  <input type="text" id="postnummer" name="postnummer" placeholder="Dit postnummer"
+		class="mt-1 block w-full rounded-md border-gray-600 bg-gray-800 text-white placeholder-gray-400 shadow-sm focus:border-yellow-600 focus:ring focus:ring-yellow-500 focus:ring-opacity-50" required>
+	</div>
+  
+	<!-- Bynavn input -->
+	<div>
+	  <label for="bynavn" class="block text-sm font-medium text-white">Bynavn:</label>
+	  <input type="text" id="bynavn" name="bynavn" placeholder="Din by"
+		class="mt-1 block w-full rounded-md border-gray-600 bg-gray-800 text-white placeholder-gray-400 shadow-sm focus:border-yellow-600 focus:ring focus:ring-yellow-500 focus:ring-opacity-50" required>
+	</div>
+  
+	<!-- Telefon input -->
+	<div>
+	  <label for="telefon" class="block text-sm font-medium text-white">Telefon:</label>
+	  <input type="tel" id="telefon" name="telefon" placeholder="Dit telefonnummer"
+		class="mt-1 block w-full rounded-md border-gray-600 bg-gray-800 text-white placeholder-gray-400 shadow-sm focus:border-yellow-600 focus:ring focus:ring-yellow-500 focus:ring-opacity-50">
+	</div>
+  
+	<!-- Nyhedsbrev checkbox -->
+	<div class="flex items-center">
+	  <input type="checkbox" id="nyhedsbrev" name="nyhedsbrev"
+		class="h-4 w-4 text-yellow-600 border-gray-600 focus:ring-yellow-600">
+	  <label for="nyhedsbrev" class="ml-2 text-sm text-white">Tilmeld nyhedsbrev</label>
+	</div>
+  
+	<!-- Submit knap -->
+	<div class="text-right mt-4 animate-bounce">
+	  <button type="submit" class="inline-block px-6 py-3 bg-yellow-600 text-black font-semibold text-sm uppercase shadow-lg hover:bg-yellow-500 transform transition-transform duration-300 hover:scale-110">Køb nu</button>
+	</div>
+  </form>
