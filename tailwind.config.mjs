@@ -9,7 +9,15 @@ export default {
         customPink: "#E7639B",
         customBlueLight: "#386989",
       },
+      boxShadow: {
+        'white-glow': '0 4px 6px rgba(255, 255, 255, 0.5)', // Tilføj den hvide skygge her
+      },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/container-queries"),
+  ],
 };
