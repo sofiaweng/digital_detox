@@ -3,34 +3,39 @@ import Link from '../components/Link.astro'
 import { Image } from 'astro:assets';
 import whitelogo from "../assets/images/white_logo.png";
 ---
+
+
 <div>
-    <div x-data="{ showmenu: false }" class="p-4 static lg:static w-full bg-[#052F45] text-[#F7F7F7]" >
-        <div id="navbar" class="flex flex-row justify-between ">
+    <div x-data="{ showmenu: false }" class="  lg:static w-full bg-[#052F45] text-[#F7F7F7]" >
+        <div id="navbar" class=" p-4 flex flex-row justify-between">
         <div id="logo" class="">
-        <a href="#link1">
-            <Image src={whitelogo} alt=""></Image>
+        <a href="#">
+            <img src="../assets/images/white_logo.png" alt="logo">
         </a>
         </div>
         <nav id="desktopmenu" class="hidden lg:block">
-        <ul class="flex flex-row gap-4">
-        <li class=""><Link href="#" >Link 1</Link></li><!-- alternativt: lav et <a href="">Link</a>, hvis du ikke vil bruge Link.astro komponenten -->
-        <li class=""><Link href="#" >Link 2</Link></li>
-        <li class=""><Link href="#" >Link 3</Link></li>
-        <li class=""><Link href="#" >Link 4</Link></li>
+        <ul class="flex flex-row gap-8">
+        <li class=""> <a href="/">SÅDAN DELTAGER DU</a></li><!-- alternativt: lav et <a href="">Link</a>, hvis du ikke vil bruge Link.astro komponenten -->
+        <li class=""><a href="/formular">REGISTRER DIT BIDRAG</a></li>
+        <li class=""><a href="/ressourcer" >RESSOURCER</a></li>
+        <li class=""><a href="#" >LÆRINGSCENTER</a></li>
+        <li class=""><a href="#" >WORLD CLEANING DAY</a></li>
         </ul>
         </nav>
-        <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">
-           MENU
-        </button>
+        <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button>
         </div>
-        <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
+        <nav id="mobilmenu" class="flex flex-col content-center pt-4  text-[#052F45] bg-[#F7F7F7] " 
         x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
         <ul >
-        <li class="text-center py-2 border-y-2"><Link href="#" >Link 1</Link></li>
-        <li class="text-center py-2 border-b-2"><Link href="#" >Link 2</Link></li>
-        <li class="text-center py-2 border-b-2"><Link href="#" >Link 3</Link></li>
-        <li class="text-center py-2 border-b-2"><Link href="#" >Link 4</Link></li>
+        <img src="/assets/images/bluepixels-right.svg" alt="pixels">
+        <li class="p-4 border-b-2"><a href="/">SÅDAN DELTAGER DU</a></li>
+        <li class="p-4  border-b-2"><a href="/formular">REGISTRER DIT BIDRAG</a></li>
+        <li class="p-4  border-b-2"><a href="/ressourcer" >RESSOURCER</a></li>
+        <li class="p-4 border-b-2"><a href="#" >LÆRINGSCENTER</a></li>
+        <li class="p-4 border-b-2"><a href="#" >WORLD CLEANING DAY</a></li>
+        
         </ul>
         </nav>
         </div>
 </div>
+
