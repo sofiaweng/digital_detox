@@ -88,25 +88,43 @@ import whiteLogo from '../assets/images/white_logo.png';
             class="mt-1 block w-full border-customPink bg-customBlueLight text-customGray placeholder-customGray shadow-sm focus:border-customPink focus:ring focus:ring-customPink focus:ring-opacity-50 p-3" required>
     </div>
 
-    <!-- Nyhedsbrev checkbox1 -->
-    <div class="flex items-center mb-4">
+<!-- Nyhedsbrev checkbox1 -->
+<div class="mb-4 w-full">
+    <div class="flex items-center w-full">
         <input type="checkbox" id="nyhedsbrev1" name="nyhedsbrev1"
             class="h-4 w-4 text-customPink border-customGray focus:ring-customPink">
-        <label for="nyhedsbrev1" class="ml-2 text-sm text-white">
-            * Jeg er enig i <a href="https://www.digitalcleanupday.org/terms-conditions" target="_blank" class="text-customPink underline">Terms & Conditions</a>
+        <label for="nyhedsbrev1" class="ml-2 text-sm text-white relative inline-block w-full">
+            * Jeg er enig med 
+            <a href="https://www.digitalcleanupday.org/terms-conditions" target="_blank" class="text-customPink">Terms & Conditions</a>
+            <span class="absolute left-0 bottom-0 w-full" style="height: 1px; background-color: #E7639B; box-sizing: border-box;"></span>
         </label>
     </div>
-
-<!-- Nyhedsbrev checkbox2 -->
-<div class="flex items-center mb-20"> <!-- Afstand mellem checkbox og knappen -->
-    <input type="checkbox" id="nyhedsbrev2" name="nyhedsbrev2"
-        class="h-4 w-4 text-customPink border-customGray focus:ring-customPink">
-    <label for="nyhedsbrev2"  class="ml-2 text-sm text-white">Tilmeld nyhedsbrev</label>
 </div>
 
+<!-- Nyhedsbrev checkbox2 -->
+<div class="mb-14 w-full"> <!-- Afstand mellem checkbox og knappen -->
+    <div class="flex items-center w-full">
+        <input type="checkbox" id="nyhedsbrev2" name="nyhedsbrev2"
+            class="h-4 w-4 text-customPink border-customGray focus:ring-customPink">
+        <label for="nyhedsbrev2" class="ml-2 text-sm text-white relative inline-block w-full">
+            Tilmeld nyhedsbrev
+            <span class="absolute left-0 bottom-0 w-full" style="height: 1px; background-color: #E7639B; box-sizing: border-box;"></span>
+        </label>
+    </div>
+</div>
+
+
+
+
 <!-- Submit knap -->
-<div class="text-center" style="margin-top: 5rem;"> <!-- Inline margin-top for ekstra afstand -->
-    <button type="submit" class="inline-block px-6 py-3 bg-customPink text-customBlue font-bold text-sm uppercase shadow-lg hover:bg-customGray transform transition-transform duration-300 hover:scale-110">Registrér</button>
+<div class="text-center" style="margin-top: 4rem;"> <!-- Inline margin-top for ekstra afstand -->
+    <button type="submit" class="inline-block px-10 py-3 bg-customPink text-customBlue font-bold text-sm uppercase shadow-white-glow hover:bg-customGray transform transition-transform duration-300 hover:scale-110">Registrér</button>
+</div>
+
+
+<!-- Billede centrering med afstand -->
+<div class="flex justify-center items-center mt-12" style="margin-top: 4rem;" > <!-- Juster margin-top som ønsket -->
+    <img src="/src/assets/images/letsdoit_logo.png" alt="Lets do it" class="w-[25%]">
 </div>
 
 
