@@ -3,9 +3,38 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import Formular from '../components/Formular.astro';
+import SektionWhite from "../components/SektionWhite.astro";
+import SektionBlue from "../components/SektionBlue.astro";
 ---
 
 <MainLayout title="Titel">
+  <SektionBlue>
+    <div>
+      <div><img src="src/assets/images/heroimg.avif" alt="tre personer der kigger på mobil"></div>
+      <div>
+        <h1 class="text-semibold">DIGITAL DETOX</h1>
+        <p>catchy </p>
+        <Button />
+      </div>
+    </div>
+  </SektionBlue>
+  <SektionWhite>
+    <div>
+      <div>
+        <h3 >Hvad er</h3>
+        <h2 class="semibold">DIGITAL DETOX?</h2>
+      </div>
+      <div>
+        <p>Digitalt affald omfatter unødvendige e-mails, filer, apps og dubletter af fotos og videoer, som belaster den digitale verden. 
+
+          Ifølge Det Internationale Energiagentur kan lagring af 4 GB data på servere i et år forbruge 2 kWh energi og udlede 1 kg CO2, hvilket viser den miljømæssige påvirkning af digitalt affald.</p>
+      </div>
+    </div>
+  
+  </SektionWhite>
+  <SektionBlue></SektionBlue>
+  <SektionWhite></SektionWhite>
+  <SektionBlue></SektionBlue>
   <article>
     <h1>Hey fra Liv!</h1>
     <Button>Klik!</Button>
@@ -16,6 +45,7 @@ import Formular from '../components/Formular.astro';
     </p>
 
   </article>
+
 
   
 </MainLayout>
