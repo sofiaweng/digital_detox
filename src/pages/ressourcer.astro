@@ -7,24 +7,24 @@ import tailwind from "../tailwind.css";
 import 'animate.css';
 ---
 
-<header>
+<header class="mp-0 m-0">
     <Header></Header>
 </header>
 
 <!-- Hero Unit -->
 <section class="bg-customGray text-customBlue grid grid-cols-1 md:grid-cols-2">
     <!-- Pixels til venstre -->
-    <div class="flex items-center justify-start order-1 md:order-1">
+    <div class="flex items-left justify-left">
         <img
             src="/src/assets/images/pixels.png"
             alt="Pixels"
-            class="w-3/4 md:w-2/3 h-auto max-w-xs transition-transform duration-500"
+            class="w-1/2 md:w-2/3 h-auto max-w-xs transition-transform duration-500"
         />
     </div>
 
     <!-- Tekst til højre -->
-    <div class="flex flex-col justify-left p-8 order-2 md:order-2">
-        <h1 class="text-4xl text-customBlue bg-customGray font-semibold uppercase pb-8 mt-20">
+    <div class="flex flex-col justify-center p-8">
+        <h1 class="text-4xl text-customBlue bg-customGray font-semibold uppercase pb-8">
             Ressourcer og materialer
         </h1>
         <a href="https://drive.google.com/file/d/1LZAIsGLSJl7fOdqdp53YscYc0XTd2xv3/view" target="_blank" class="text-customPink underline mb-4 font-semibold">Retningslinjer for enkeltpersoner</a>  
@@ -39,6 +39,7 @@ import 'animate.css';
         <a href="https://trello.com/b/YzROvY3M/digital-cleanup-day" target="_blank" class="text-customPink underline mb-4 font-semibold">Markedsføringsmateriale</a>  
     </div>
 </section>
+
 
 <footer>
     <Footer></Footer>
