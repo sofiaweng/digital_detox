@@ -7,13 +7,13 @@ import whitelogo from "../assets/images/white_logo.png";
 
 <div>
     <div x-data="{ showmenu: false }" class="  lg:static w-full bg-[#052F45] text-[#F7F7F7]" >
-        <div id="navbar" class=" p-4 flex flex-row justify-between">
+        <div id="navbar" class=" p-4 py-7 flex flex-row justify-between">
         <div id="logo" class="">
         <a href="#">
             <img src="../assets/images/white_logo.png" alt="logo">
         </a>
         </div>
-        <nav id="desktopmenu" class="hidden lg:block">
+        <nav id="desktopmenu" class="hidden lg:block font-semibold text-sm">
         <ul class="flex flex-row gap-8">
         <li class=""> <a href="/">SÅDAN DELTAGER DU</a></li><!-- alternativt: lav et <a href="">Link</a>, hvis du ikke vil bruge Link.astro komponenten -->
         <li class=""><a href="/formular">REGISTRER DIT BIDRAG</a></li>
