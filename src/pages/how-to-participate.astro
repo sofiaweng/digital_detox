@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../components/Header.astro";
-import Sektion from "../components/Sektion.astro";
+import SektionBlue from "../components/SektionBlue.astro";
+import SektionWhite from "../components/SektionWhite.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
@@ -8,7 +9,7 @@ import thumbsup from "../assets/images/thumbsup.png";
 ---
 
 <MainLayout title="Titel">
-  <Sektion>
+  <SektionBlue>
     <div>
       <h1>Sådan laver man en digital oprydning</h1>
       <p>
@@ -24,9 +25,9 @@ import thumbsup from "../assets/images/thumbsup.png";
       <button>Til virksomheder</button>
       <button>Til enkeltpersoner</button>
     </div>
-  </Sektion>
+  </SektionBlue>
 
-  <Sektion>
+  <SektionWhite>
     <h3>Digital oprydning for virksomheder</h3>
     <h2>Hvorfor skal min virksomhed deltage?</h2>
     <div>
@@ -77,9 +78,9 @@ import thumbsup from "../assets/images/thumbsup.png";
         sustainable workflow.
       </p>
     </div>
-  </Sektion>
+  </SektionWhite>
 
-  <Sektion>
+  <SektionBlue>
     <h2>Sådan reducerer du sin organisations digitale fodaftryk</h2>
     <div>
       <div>
@@ -103,14 +104,14 @@ import thumbsup from "../assets/images/thumbsup.png";
       </div>
     </div>
     <Button>Del din organisations resultater</Button>
-  </Sektion>
+  </SektionBlue>
 
-  <Sektion>
+  <SektionWhite>
     <h3>Digital oprydning for enkeltpersoner</h3>
     <h2>Hvordan man laver en digital oprydning</h2>
-  </Sektion>
+  </SektionWhite>
 
-  <Sektion>
+  <SektionBlue>
     <div>
       <h3>step</h3>
       <p>tekst</p>
@@ -132,5 +133,5 @@ import thumbsup from "../assets/images/thumbsup.png";
       <p>tekst</p>
     </div>
     <Button>Del dine resultater</Button>
-  </Sektion>
+  </SektionBlue>
 </MainLayout>
