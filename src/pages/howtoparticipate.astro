@@ -32,8 +32,13 @@ import thumbsup from "../assets/images/thumbsup.webp";
     <h3>Digital oprydning for virksomheder</h3>
     <h2>Hvorfor skal min virksomhed deltage?</h2>
     <div class="grid grid-cols-3 grid-rows-2 gap-2">
-      <div>
-        <Image src={thumbsup} alt="" />
+      <div class="flex flex-col items-center text-center justify-center">
+        <img
+          class="w-1/3 md:w-1.5/5"
+          src="src/assets/images/tandhjul.svg"
+          alt=""
+        />
+
         <p>
           By tackling your digital footprint issue head-on, you reduce your
           organisations environmental load, creating instead a much more
@@ -148,7 +153,7 @@ import thumbsup from "../assets/images/thumbsup.webp";
   <SektionBlue>
     <div class="grid grid-cols-2 items-center ob">
       <div>
-        <h3>TRIN 1</h3>
+        <h3 class="text-[#8BCAFC]">TRIN 1</h3>
         <h3>Ryd op i din smartphone</h3>
         <p>
           Fjern alle apps, du ikke har brugt i et stykke tid, eller som du kun
@@ -180,7 +185,7 @@ import thumbsup from "../assets/images/thumbsup.webp";
         />
       </div>
       <div>
-        <h3>TRIN 2</h3>
+        <h3 class="text-[#8BCAFC]">TRIN 2</h3>
         <h3>Ryd op i din computer hard drive</h3>
         <p>
           Ryd op på din personlige computer og slet filer, der er duplikerede
@@ -190,9 +195,9 @@ import thumbsup from "../assets/images/thumbsup.webp";
         </p>
       </div>
     </div>
-    <div class="grid grid-cols-2 items-center">
+    <div class="grid grid-cols-2 items-center gap-5">
       <div>
-        <h3>TRIN 3</h3>
+        <h3 class="text-[#8BCAFC]">TRIN 3</h3>
         <h3>Ryd op i din mailboks</h3>
         <p>
           Filtrer dine e-mails efter de ældste og arkiver dem. Afmeld
@@ -203,12 +208,22 @@ import thumbsup from "../assets/images/thumbsup.webp";
           mailbox!
         </p>
       </div>
-      <Image src={thumbsup} alt="" />
-    </div>
-    <div class="grid grid-cols-2 items-center">
-      <Image src={thumbsup} alt="" />
+      <div class="flex items-center justify-center">
+        <img
+          class="w-1/3 md:w-1.5/5"
+          src="src/assets/images/postkasse.svg"
+          alt=""
+        />
+      </div>
+      <div class="flex items-center justify-center">
+        <img
+          class="w-1/3 md:w-1.5/5"
+          src="src/assets/images/nye_vaner.svg"
+          alt=""
+        />
+      </div>
       <div>
-        <h3>STEP 4</h3>
+        <h3 class="text-[#8BCAFC]">STEP 4</h3>
         <h3>Lav nye vaner</h3>
         <p>
           I stedet for at sende e-mails, brug flere co-working-områder. Stop med
