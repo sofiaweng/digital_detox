@@ -16,6 +16,109 @@ img {
 }
 
 @layer base {
+  .roll-in-top {
+    -webkit-animation: roll-in-top 4s ease-out 0.2s infinite;
+    animation: roll-in-top 4s ease-out 0.2s infinite;
+  }
+
+  @-webkit-keyframes roll-in-top {
+    0% {
+      -webkit-transform: translateY(-530px) rotate(-340deg);
+      transform: translateY(-530px) rotate(-340deg);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.8;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-top {
+    0% {
+      -webkit-transform: translateY(-530px) rotate(-340deg);
+      transform: translateY(-530px) rotate(-340deg);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.8;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  .roll-in-top-2 {
+    -webkit-animation: roll-in-top-2 4s ease-out 0.8s infinite;
+    animation: roll-in-top-2 4s ease-out 0.8s infinite;
+  }
+  @-webkit-keyframes roll-in-top-2 {
+    0% {
+      -webkit-transform: translateY(530px) rotate(-540deg);
+      transform: translateY(-530px) rotate(-540deg);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.8;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-top-2 {
+    0% {
+      -webkit-transform: translateY(530px) rotate(-540deg);
+      transform: translateY(-530px) rotate(-540deg);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.8;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  .roll-in-top-3 {
+    -webkit-animation: roll-in-top-3 4s ease-out 1.2s infinite;
+    animation: roll-in-top-3 4s ease-out 1.2s infinite;
+  }
+  @-webkit-keyframes roll-in-top-3 {
+    0% {
+      -webkit-transform: translateY(530px) rotate(-540deg);
+      transform: translateY(-530px) rotate(-540deg);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.8;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-top-3 {
+    0% {
+      -webkit-transform: translateY(530px) rotate(-540deg);
+      transform: translateY(-530px) rotate(-540deg);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.8;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
   html {
     font-family: "Poppins", sans-serif;
   }
