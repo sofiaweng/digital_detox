@@ -91,7 +91,7 @@ import SektionBlue from "../components/SektionBlue.astro";
   </SektionWhite>
   <SektionBlue>
     <div class="md:grid md:grid-cols-2 gap-5">
-        <div>
+        <div class="block">
         <h3>Vidste du...?</h3>
         <h2>Digital skrald fakta</h2>
         <ul class="list-disc p-4 ">
@@ -103,12 +103,13 @@ import SektionBlue from "../components/SektionBlue.astro";
           <p class="text-customPink underline italic cursor-pointer">Læs mere</p>
         </ul>
         </div>
+      
         <!-- animating skraldespand -->
-      <div class="relative ml-5">
+      <div class="relative md:ml-5 aspect-[100/120]">
         <div class="roll-in-top w-20 absolute aspect-[122.95/75.87] left-20 bottom-3">
           <img src="src/assets/images/mail.svg"></img>
         </div>
-        <div class="roll-in-top-2 w-20 absolute aspect-[122.95/75.87] left-40 bottom-5">
+        <div class="roll-in-top-2 w-20 absolute aspect-[122.95/75.87] left-28 bottom-5">
           <img src="src/assets/images/mail.svg"></img>
         </div>
 <!-- bg-[url('src/assets/images/white-trashcan.svg')]  -->
