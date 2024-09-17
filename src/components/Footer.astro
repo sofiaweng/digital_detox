@@ -1,6 +1,24 @@
 ---
+import Link from "../components/Link.astro";
 ---
-<div>
-<p>Footer - tilføj footerindhold</p>
+
+<div class="bg-orange-800 p-8 flex flex-row justify-between items-center">
+  <p>billede</p>
+  <div class="flex flex-col items-center">
+    <p><b>Let's Do It World NGO</b></p>
+    <p>Roosikrantsi 3</p>
+    <p>TALLINN 10119, Estonia</p><p>Reg. code - 80562203 digital@ldiw.org</p>
+  </div>
+  <div>
+    <Link />
+    <Link />
+    <Link />
+    <Link />
+  </div>
 </div>
-  
+
+<style>
+  Footer {
+    background-color: #07293d;
+  }
+</style>
