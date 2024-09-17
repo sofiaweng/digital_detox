@@ -9,98 +9,132 @@ import thumbsup from "../assets/images/thumbsup.webp";
 ---
 
 <MainLayout title="Titel">
-  <SektionBlue>
-    <div>
+  <SektionBlue class="grid grid-cols-2 grid-rows-2 gap-2">
+    <div class="col-span-2">
       <h1>Sådan laver man en digital oprydning</h1>
       <p>
-        Companies and organisations can make changes in everyday work flow that
-        help reduce the ecological footprint of digital systems significantly.
-        This requires a little time and willingness to make strategic decisions
-        and implement simple changes. When you think of your workflow, you must
-        evaluate what does and does not work, then assess how you can make the
-        system work better for everyone.
+        Virksomheder og organisationer kan foretage ændringer i den daglige
+        arbejdsflow, som kan hjælpe med at reducere den økologiske fodaftryk fra
+        digitale systemer betydeligt. Dette kræver lidt tid og vilje til at
+        træffe strategiske beslutninger og implementere enkle ændringer. Når du
+        overvejer dit arbejdsflow, skal du vurdere, hvad der fungerer, og hvad
+        der ikke gør, og derefter vurdere, hvordan du kan gøre systemet bedre
+        for alle.
       </p>
     </div>
-    <div>
-      <button>Til virksomheder</button>
-      <button>Til enkeltpersoner</button>
+    <div class="flex justify-center gap-2">
+      <Button>Til virksomheder</Button>
+      <Button>Til enkeltpersoner</Button>
     </div>
   </SektionBlue>
 
   <SektionWhite>
     <h3>Digital oprydning for virksomheder</h3>
     <h2>Hvorfor skal min virksomhed deltage?</h2>
-    <div>
-      <Image src={thumbsup} alt="" />
-      <p>
-        By tackling your digital footprint issue head-on, you reduce your
-        organisations environmental load, creating instead a much more
-        sustainable workflow.
-      </p>
-    </div>
-    <div>
-      <Image src={thumbsup} alt="" />
-      <p>
-        By tackling your digital footprint issue head-on, you reduce your
-        organisations environmental load, creating instead a much more
-        sustainable workflow.
-      </p>
-    </div>
-    <div>
-      <Image src={thumbsup} alt="" />
-      <p>
-        By tackling your digital footprint issue head-on, you reduce your
-        organisations environmental load, creating instead a much more
-        sustainable workflow.
-      </p>
-    </div>
-    <div>
-      <Image src={thumbsup} alt="" />
-      <p>
-        By tackling your digital footprint issue head-on, you reduce your
-        organisations environmental load, creating instead a much more
-        sustainable workflow.
-      </p>
-    </div>
-    <div>
-      <Image src={thumbsup} alt="" />
-      <p>
-        By tackling your digital footprint issue head-on, you reduce your
-        organisations environmental load, creating instead a much more
-        sustainable workflow.
-      </p>
-    </div>
-    <div>
-      <Image src={thumbsup} alt="" />
-      <p>
-        By tackling your digital footprint issue head-on, you reduce your
-        organisations environmental load, creating instead a much more
-        sustainable workflow.
-      </p>
+    <div class="grid grid-cols-3 grid-rows-2 gap-2">
+      <div>
+        <Image src={thumbsup} alt="" />
+        <p>
+          By tackling your digital footprint issue head-on, you reduce your
+          organisations environmental load, creating instead a much more
+          sustainable workflow.
+        </p>
+      </div>
+      <div>
+        <Image src={thumbsup} alt="" />
+        <p>
+          By tackling your digital footprint issue head-on, you reduce your
+          organisations environmental load, creating instead a much more
+          sustainable workflow.
+        </p>
+      </div>
+      <div>
+        <Image src={thumbsup} alt="" />
+        <p>
+          By tackling your digital footprint issue head-on, you reduce your
+          organisations environmental load, creating instead a much more
+          sustainable workflow.
+        </p>
+      </div>
+      <div>
+        <Image src={thumbsup} alt="" />
+        <p>
+          By tackling your digital footprint issue head-on, you reduce your
+          organisations environmental load, creating instead a much more
+          sustainable workflow.
+        </p>
+      </div>
+      <div>
+        <Image src={thumbsup} alt="" />
+        <p>
+          By tackling your digital footprint issue head-on, you reduce your
+          organisations environmental load, creating instead a much more
+          sustainable workflow.
+        </p>
+      </div>
+      <div>
+        <Image src={thumbsup} alt="" />
+        <p>
+          By tackling your digital footprint issue head-on, you reduce your
+          organisations environmental load, creating instead a much more
+          sustainable workflow.
+        </p>
+      </div>
     </div>
   </SektionWhite>
 
-  <SektionBlue>
-    <h2>Sådan reducerer du sin organisations digitale fodaftryk</h2>
-    <div>
+  <SektionBlue class="flex flex-col gap-2">
+    <h2>Sådan reducerer du din organisations digitale fodaftryk</h2>
+    <div class="grid grid-cols-2 grid-rows-2 text-center gap-5">
       <div>
-        <h3>step</h3>
-        <h3>titel</h3><p>tekst</p>
+        <h3>TRIN 1</h3>
+        <h3>Vær opmærksom på, hvad der er affald, og hvad der ikke er</h3><p>
+          Digitalt affald kan være alt fra unødvendige kopier til glemte
+          sikkerhedskopier og kundedata opbevaret i årevis. Dit digitale
+          fodaftryk øges også ved at sende e-mails, bruge virtuelle
+          arbejdsområder uregelmæssigt, sikkerhedskopiere store filer på servere
+          i realtid, holde lange møder med videostreaming osv. En god måde at
+          begynde at finde ud af dette på er at lave en oversigt over, hvad der
+          er forretningskritisk, og hvilke optegnelser der kræves at blive
+          opbevaret af loven, efterfulgt af en vurdering af effektiviteten af
+          dine digitale procedurer.
+        </p>
       </div>
       <div>
-        <h3>step</h3>
-        <h3>titel</h3>
-        <p>tekst</p>
+        <h3>TRIN 2</h3>
+        <h3>Kortlæg dit digitale affald</h3>
+        <p>
+          Find ud af, hvor dit glemte digitale affald befinder sig: gennemgå
+          alle dine sikkerhedskopier, e-mail-indbakker og sendt-post, udløbne
+          optegnelser og dokumenter, alle data opbevaret på servere, og hvor
+          store filer opbevares.
+        </p>
       </div>
       <div>
-        <h3>step</h3>
+        <h3>TRIN 3</h3>
         <h3>titel</h3>
-        <p>tekst</p>
+        <p>
+          Uddan dine medarbejdere om digitalt affald og organiser en digital
+          oprydning med dit personale; du kan opfordre dem til at rydde op på
+          deres personlige og virksomhedens enheder. Organiser en konkurrence,
+          eller udfordr dine kolleger til at deltage. Fjern alt skrald og
+          opbevar det, der er forretningskritisk, på cloud-servere. Involver din
+          IT-afdeling i at finde løsninger, der kan reducere spild af digitale
+          ressourcer.
+        </p>
       </div>
       <div>
-        <h3>step</h3>
-        <h3>titel</h3>
-        <p>tekst</p>
+        <h3>TRIN 4</h3>
+        <h3>Organisér en digital oprydning</h3>
+        <p>
+          Uddan dine medarbejdere om digitalt affald og organiser en digital
+          oprydning med dit personale; du kan opfordre dem til at rydde op på
+          deres personlige og virksomhedens enheder. Organiser en konkurrence,
+          eller udfordr dine kolleger til at deltage. Fjern alt skrald og
+          opbevar det, der er forretningskritisk, på cloud-servere. Involver din
+          IT-afdeling i at finde løsninger, der kan reducere spild af digitale
+          ressourcer.
+        </p>
       </div>
     </div>
     <Button>Del din organisations resultater</Button>
@@ -112,26 +146,71 @@ import thumbsup from "../assets/images/thumbsup.webp";
   </SektionWhite>
 
   <SektionBlue>
-    <div>
-      <h3>step</h3>
-      <p>tekst</p>
+    <div class="grid grid-cols-2 items-center ob">
+      <div>
+        <h3>TRIN 1</h3>
+        <h3>Ryd op i din smartphone</h3>
+        <p>
+          Fjern alle apps, du ikke har brugt i et stykke tid, eller som du kun
+          har brugt et par gange. Slet alle de unødvendige apps. De bruger
+          energi, selv når de ikke er i brug, og kan bruge hundredevis af
+          megabyte under månedlige opdateringer. Husk at slette alle
+          brugerprofiler (inklusive e-mails), du ikke længere bruger. Det vil
+          gøre din telefon hurtigere og øge batterilevetiden. Det er altid en
+          fordel at have så få apps som muligt. Gennemgå dine fotos og videoer.
+          Ved at slette de unødvendige kan du frigøre mange gigabyte værdifuld
+          lagerplads. Se vores retningslinjer for, hvordan du renser din
+          smartphone og tablet.
+        </p>
+      </div>
       <Image src={thumbsup} alt="" />
     </div>
-    <div>
+    <div class="grid grid-cols-2 items-center">
       <Image src={thumbsup} alt="" />
-      <h3>step</h3>
-      <p>tekst</p>
+      <div>
+        <h3>TRIN 2</h3>
+        <h3>Ryd op i din computer hard drive</h3>
+        <p>
+          Ryd op på din personlige computer og slet filer, der er duplikerede
+          eller er blevet unødvendige. Gennemgå alle dine fotos, og slet
+          duplikater og slørede billeder. Tjek videofilerne og slet de sete
+          eller unødvendige. Arkiver de vigtige filer. Se retningslinjerne.
+        </p>
+      </div>
     </div>
-    <div>
-      <h3>step</h3>
-      <p>tekst</p>
+    <div class="grid grid-cols-2 items-center">
+      <div>
+        <h3>TRIN 3</h3>
+        <h3>Ryd op i din mailboks</h3>
+        <p>
+          Filtrer dine e-mails efter de ældste og arkiver dem. Afmeld
+          nyhedsbreve, du ikke læser. Vælg lange samtaler, find den nyeste, og
+          slet alt det andet! Søg efter almindelige navne, adresser og ord for
+          at samle lignende e-mails, så du kan håndtere dem i én omgang. Klik på
+          slet-knappen. Se retningslinjerne for, hvordan du rydder op i din
+          mailbox!
+        </p>
+      </div>
       <Image src={thumbsup} alt="" />
     </div>
-    <div>
+    <div class="grid grid-cols-2 items-center">
       <Image src={thumbsup} alt="" />
-      <h3>step</h3>
-      <p>tekst</p>
+      <div>
+        <h3>STEP 4</h3>
+        <h3>Lav nye vaner</h3>
+        <p>
+          I stedet for at sende e-mails, brug flere co-working-områder. Stop med
+          at sende ‘ok’ og ‘tak’-e-mails! Opbevar de vigtige filer på ét
+          cloud-sted, så du ikke behøver at have den samme fil på hver computer.
+          Tænk først, før du sikkerhedskopierer. Skab mindre ‘hurtigt indhold’
+          og vær mere bevidst om dine videoer og fotos. Sørg for kun at
+          sikkerhedskopiere de filer, du virkelig har brug for. Små ændringer i
+          dine internetvaner, såsom at slukke for video under et virtuelt møde
+          og reducere kvaliteten af streamingtjenester kan betydeligt reducere
+          dit miljømæssige fodaftryk!
+        </p>
+      </div>
     </div>
-    <Button>Del dine resultater</Button>
+    <Button class="place-self-center">Del dine resultater</Button>
   </SektionBlue>
 </MainLayout>
