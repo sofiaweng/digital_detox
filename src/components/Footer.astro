@@ -1,24 +1,31 @@
 ---
 import Link from "../components/Link.astro";
+import letsdoitlogo from "../assets/images/letsdoit_logo.png";
 ---
 
-<div class="bg-orange-800 p-8 flex flex-row justify-between items-center">
+<div
+  class="bg-[#052F45] text-[#F7F7F7] p-8 flex flex-row justify-between items-center"
+>
   <p>billede</p>
   <div class="flex flex-col items-center">
     <p><b>Let's Do It World NGO</b></p>
     <p>Roosikrantsi 3</p>
     <p>TALLINN 10119, Estonia</p><p>Reg. code - 80562203 digital@ldiw.org</p>
   </div>
-  <div>
-    <Link />
-    <Link />
-    <Link />
-    <Link />
+  <div class="flex flex-col items-center">
+    <Link href="https://www.worldcleanupday.org/blog" target="_blank">Blog</Link
+    >
+    <Link
+      href="https://trello.com/b/YzROvY3M/digital-cleanup-day"
+      target="_blank">Marketing materialer</Link
+    >
+    <Link
+      href="https://drive.google.com/file/d/1a0sgGo1n8edioZ4Itm6DNqTPlmKWGfTj/view"
+      target="_blank">Forfatning</Link
+    >
+
+    <Link href="https://www.worldcleanupday.org/get-involved" target="_blank"
+      >Vær med i bevægelsen</Link
+    >
   </div>
 </div>
-
-<style>
-  Footer {
-    background-color: #07293d;
-  }
-</style>
