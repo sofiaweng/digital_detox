@@ -10,7 +10,7 @@ import SektionBlue from "../components/SektionBlue.astro";
 
 <MainLayout title="Titel">
   <section  class="bg-[#052F45] text-[#F7F7F7] relative">
-    <div class=" grid md:grid-cols-2 overflow-hidden ">
+    <div class=" grid md:grid-cols-2  ">
       <div>
      <img class="absolute w-1/5 md:w-32" src="src/assets/images/bluepixels-left.svg" alt="bluepixels left">
         <img src="src/assets/images/heroimg.avif" alt="tre personer der kigger på mobil"></div>
@@ -24,9 +24,13 @@ import SektionBlue from "../components/SektionBlue.astro";
     </div>
 
   </section>
-  <SektionWhite>
-    <div>
-      <div>
+    
+</section>
+  <section>      
+    <img class="w-1/3 absolute right-0 md:w-1/5" src="src/assets/images/bluepixels-up-right.svg" alt="">
+    <div class="pt-6 m-auto max-w-screen-lg p-4">
+
+      <div >
         <h3 >Hvad er</h3>
         <h2 class="semibold">DIGITAL DETOX?</h2>
       </div>
@@ -36,29 +40,40 @@ import SektionBlue from "../components/SektionBlue.astro";
           Ifølge Det Internationale Energiagentur kan lagring af 4 GB data på servere i et år forbruge 2 kWh energi og udlede 1 kg CO2, hvilket viser den miljømæssige påvirkning af digitalt affald.</p>
       </div>
     </div>
-  <div class="w-3/4 bg-[#052F45]">
+    <div class=" pb-6 flex flex-row">
+  <div class=" p-2 pl-4 w-11/12 md:w-3/4 bg-[#052F45]">
     <div class=""></div>
     <p class="text-[#F7F7F7]">Digital Skraldedag 2025 foregår den 15. marts.</p>
   </div>
-  </SektionWhite>
+  <img class="w-6" src="src/assets/images/bluepixels-left-v2.svg" alt="">
+</div>
+</section>
   <SektionBlue>
-    <h2>Hvorfor fjerne digital skrald?</h2>
-    <div>
-      <img src="" alt="">
-      <p></p>
+    <h2 class="py-5">Hvorfor fjerne digital skrald?</h2>
+    <div class="py-5  flex flex-wrap  flex justify-evenly  gap-5 md:grid md:grid-cols-5">
+        <div class="w-5/12 text-center md:w-fit grid justify-items-center">
+        <img class="w-1/2" src="src/assets/images/ikoner/ikon-co2.svg" alt="co2 ikon">
+        <p>Hjælper med at reducere CO2-udledning</p>
+      </div>
+      <div  class="w-5/12 text-center md:w-fit grid justify-items-center">
+        <img class="w-1/2" src="src/assets/images/ikoner/ikon-devices.svg" alt="devices ikon">
+        <p>Forlænget levetid for dine enheder</p>
+      </div>
+      <div class="w-5/12 text-center md:w-fit grid justify-items-center">
+        <img class="w-1/2" src="src/assets/images/ikoner/ikon-mappe.svg" alt="mappeikon">
+        <p>Fremskynder og forenkler deling og finde af information</p>
+      </div>
+      <div class="w-5/12 text-center md:w-fit grid justify-items-center">
+        <img class="w-1/3" src="src/assets/images/ikoner/ikon-info.svg" alt="info lås">
+        <p>Reducerer sikkerhedsrisici ved datalagring</p>
+      </div>
+      <div class="w-5/12 text-center md:w-fit grid justify-items-center">
+        <img class="w-1/2" src="src/assets/images/ikoner/ikon-graf.svg" alt="grafer ikon">
+        <p>Øger disk- og serverkapaciteten, hvilket hjælper med at reducere omkostninger</p>
+      </div>
     </div>
-    <div>
-      <img src="" alt="">
-      <p></p>
-    </div>
-    <div>
-      <img src="" alt="">
-      <p></p>
-    </div>
-    <div>
-      <img src="" alt="">
-      <p></p>
-    </div>
+    
+ 
   </SektionBlue>
   <SektionWhite>
     <h2>SÅDAN DELTAGER DU</h2>
