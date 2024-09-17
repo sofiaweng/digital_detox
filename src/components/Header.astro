@@ -1,5 +1,60 @@
 ---
+import Link from '../components/Link.astro'
+import { Image } from 'astro:assets';
+import whitelogo from "src/assets/images/white_logo.png";
 ---
+
+
 <div>
-Header - tilføj navigation mm.
+    <div x-data="{ showmenu: false }" class="  lg:static w-full bg-[#052F45] text-[#F7F7F7]" >
+        <div id="navbar" class=" p-4  flex flex-row justify-between">
+        <div id="logo" class=" self-center">
+        <a href="/">
+            <!-- <Image src={whitelogo} alt="" /> -->
+            <img class="w-20" src="src/assets/images/white_logo.png" alt="logo">
+          
+        </a>
+        </div>
+        <nav id="desktopmenu" class="hidden lg:block font-semibold text-sm self-center">
+        <ul class="flex flex-row gap-8">
+        <li class=""> <a href="/">SÅDAN DELTAGER DU</a></li><!-- alternativt: lav et <a href="">Link</a>, hvis du ikke vil bruge Link.astro komponenten -->
+        <li class=""><a href="/formular">REGISTRER DIT BIDRAG</a></li>
+        <li class=""><a href="/ressourcer" >RESSOURCER</a></li>
+        <li class=""><a href="#" >LÆRINGSCENTER</a></li>
+        <li class=""><a href="#" >WORLD CLEANING DAY</a></li>
+        </ul>
+        </nav> 
+        <div id="burgermenu" class=" self-center lg:hidden p-2" x-on:click="showmenu = ! showmenu" >
+            <span class="block w-10 h-1 bg-[#F7F7F7] my-3" ></span>
+            <span class="block w-10 h-1 bg-[#F7F7F7] my-3"></span>
+            <span class="block w-10 h-1 bg-[#F7F7F7] my-3"></span>
+        </div>
+        <!-- <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button> -->
+        </div>
+       
+        <nav id="mobilmenu" class="flex flex-col content-center lg:hidden  font-semibold  text-[#052F45] bg-[#F7F7F7] " 
+        x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+        <ul >
+            <img class="w-1/3  absolute right-0" src="src/assets/images/bluepixels-up-right.svg" alt="pixels">
+        <li class="p-4 border-b-2"><a href="/">SÅDAN DELTAGER DU</a></li>
+        <li class="p-4  border-b-2"><a href="/formular">REGISTRER DIT BIDRAG</a></li>
+        <li class="p-4  border-b-2"><a href="/ressourcer" >RESSOURCER</a></li>
+        <li class="p-4 border-b-2"><a href="#" >LÆRINGSCENTER</a></li>
+        <li class="p-4 border-b-2"><a href="#" >WORLD CLEANING DAY</a></li>
+         <img class="w-2/4  mt-2 " src="src/assets/images/bluepixels-down-left.svg" alt="pixels">
+        </ul>
+        </nav>
+        </div>
 </div>
+
+<script>
+    /* //set active class on nav when the page is active */
+const nav = document.querySelector(".desktopmenu");
+const navLinks = nav.querySelectorAll("a");
+const currentURL = window.location.href;
+navLinks.forEach((link) =>{
+    if (link.href === currentURL){
+         link.classList.add("active")
+    }
+});
+</script>
