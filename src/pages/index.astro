@@ -1,0 +1,87 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import Formular from '../components/Formular.astro';
+import SektionWhite from "../components/SektionWhite.astro";
+import SektionBlue from "../components/SektionBlue.astro";
+---
+
+
+<MainLayout title="Titel">
+  <section  class="bg-[#052F45] text-[#F7F7F7] relative">
+    <div class=" grid md:grid-cols-2 overflow-hidden ">
+      <div>
+     <img class="absolute w-1/5 md:w-32" src="src/assets/images/bluepixels-left.svg" alt="bluepixels left">
+        <img src="src/assets/images/heroimg.avif" alt="tre personer der kigger på mobil"></div>
+      <div class="p-4 self-center">
+        <h1 class="text-semibold">DIGITAL DETOX</h1>
+        <p>catchy </p>
+        <Button>DEL DIT BIDRAG</Button>      
+ 
+      </div>    
+<div class="center" ><img class="w-1/5 absolute bottom-0 right-0"  src="src/assets/images/whitepixels-down-left.svg" alt=""></div>       
+    </div>
+
+  </section>
+  <SektionWhite>
+    <div>
+      <div>
+        <h3 >Hvad er</h3>
+        <h2 class="semibold">DIGITAL DETOX?</h2>
+      </div>
+      <div>
+        <p>Digitalt affald omfatter unødvendige e-mails, filer, apps og dubletter af fotos og videoer, som belaster den digitale verden. 
+
+          Ifølge Det Internationale Energiagentur kan lagring af 4 GB data på servere i et år forbruge 2 kWh energi og udlede 1 kg CO2, hvilket viser den miljømæssige påvirkning af digitalt affald.</p>
+      </div>
+    </div>
+  <div class="w-3/4 bg-[#052F45]">
+    <div class=""></div>
+    <p class="text-[#F7F7F7]">Digital Skraldedag 2025 foregår den 15. marts.</p>
+  </div>
+  </SektionWhite>
+  <SektionBlue>
+    <h2>Hvorfor fjerne digital skrald?</h2>
+    <div>
+      <img src="" alt="">
+      <p></p>
+    </div>
+    <div>
+      <img src="" alt="">
+      <p></p>
+    </div>
+    <div>
+      <img src="" alt="">
+      <p></p>
+    </div>
+    <div>
+      <img src="" alt="">
+      <p></p>
+    </div>
+  </SektionBlue>
+  <SektionWhite>
+    <h2>SÅDAN DELTAGER DU</h2>
+    <div>
+      <img src="" alt="">
+      <Button>Individuel</Button>
+      <Button>Organisation</Button>
+    </div>
+  </SektionWhite>
+  <SektionBlue></SektionBlue>
+  <article>
+    <h1>Hey fra Liv!</h1>
+    <Button>Klik!</Button>
+    <p>
+      Link til <Link href="https://www.kea.dk" target="_blank"
+        >En anden side</Link
+      >
+    </p>
+
+  </article>
+
+
+  
+</MainLayout>
+
+<Formular></Formular>
