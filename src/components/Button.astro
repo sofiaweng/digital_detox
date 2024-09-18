@@ -1,5 +1,25 @@
 ---
+// henter parametrene fra Astro.props
+const { variant = "primary", size = "medium", href = "#", target = "_self"  } = Astro.props
+
+
+//definer den styling (Tailwind classes, der gør sig gældende for alle knapper)
+const buttonStyling = "bg-[#E7639B] text-[#052F45] font-semibold text-base px-8 py-2  hover:bg-[#F7F7F7] border-2 border-[#E7639B] uppercase transform transition-transform duration-300 ease-out hover:ease-in hover:scale-105 "
+
+//definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter
+const variantClasses = {
+    "primary": "bg-[#E7639B] hover:bg-[#F7F7F7]",
+    "secondary": "bg-[#E7639B] hover:bg-[#052F45] hover:text-[#F7F7F7]"
+}
+//definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianters størrelser
+const sizeClasses = {
+    "large": "text-xl",
+    "medium": "text-l",
+    "small": "text-base"
+}
 ---
+
+<!-- Sæt classes for den pågældende knap sammen ved hjælp af Astro class:list -->
 <div>
-    <button type="button" class="bg-customPink text-customBlue font-semibold text-1xl px-8 py-2  hover:bg-customGray border-2 border-customPink uppercase"><slot /></button>
+    <button href={href} type="button" class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot /></button>
 </div>
