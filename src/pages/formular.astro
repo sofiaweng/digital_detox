@@ -9,7 +9,7 @@ import tailwind from "../tailwind.css";
 import whiteLogo from '../assets/images/white_logo.webp';
 ---
 
-<MainLayout>
+<MainLayout title="Titel">
 <form action="#" method="post" class="max-w-2xl mx-auto p-8 mt-10 border-2 border-customPink shadow-md space-y-6 mb-12 bg-customBlue text-customGray">
     <section id="kob-nu" class="mb-6">
         <div class="mt-8 flex items-center justify-between">
@@ -95,7 +95,7 @@ import whiteLogo from '../assets/images/white_logo.webp';
             class="h-4 w-4 text-customPink border-customGray focus:ring-customPink">
         <label for="nyhedsbrev1" class="ml-2 text-sm text-white relative inline-block w-full">
             * Jeg er enig med 
-            <a href="https://www.digitalcleanupday.org/terms-conditions" target="_blank" class="text-customPink">Terms & Conditions</a>
+            <a href="https://www.digitalcleanupday.org/terms-conditions" target="_blank" class="text-customPink hover:text-customBlueLight transition-all duration-300">Terms & Conditions</a>
             <span class="absolute left-0 bottom-0 w-full" style="height: 1px; background-color: #E7639B; box-sizing: border-box;"></span>
         </label>
     </div>
@@ -123,5 +123,4 @@ import whiteLogo from '../assets/images/white_logo.webp';
     <img src="/src/assets/images/letsdoit_logo.webp" alt="Lets do it" class="w-[25%]">
 </div>
 </form>
-
 </MainLayout>
