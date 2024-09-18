@@ -1,6 +1,23 @@
-<section class="bg-[#052F45] text-[#F7F7F7] ">
-    <div class="py-6 m-auto max-w-screen-lg p-4">
+---
+import "aos/dist/aos.css";
+---
+
+<section
+  data-aos="fade-in"
+  data-aos-delay="200"
+  class="bg-[#052F45] text-[#F7F7F7]"
+>
+  <div class="py-6 m-auto max-w-screen-lg p-4">
     <slot />
-</div>
-    <img class="w-1/3 md:w-1/5 " src="src/assets/images/whitepixels-down-left.svg" alt="">
+  </div>
+  <img
+    class="w-1/3 md:w-1/5"
+    src="src/assets/images/whitepixels-down-left.svg"
+    alt=""
+  />
 </section>
+
+<script>
+  import AOS from "aos";
+  AOS.init();
+</script>
