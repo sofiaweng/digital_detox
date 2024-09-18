@@ -27,7 +27,7 @@ import thumbsup from "../assets/images/thumbsup.webp";
         <img class="w-2/3" src="src/assets/images/undrende_figur.svg" alt="" />
       </div>
     </div>
-    <div class="flex justify-center gap-2">
+    <div class="lg:flex justify-center gap-2">
       <Button>Til virksomheder</Button>
       <Button>Til enkeltpersoner</Button>
     </div>
@@ -36,7 +36,7 @@ import thumbsup from "../assets/images/thumbsup.webp";
   <SektionWhite>
     <h3>Digital oprydning for virksomheder</h3>
     <h2>Hvorfor skal min virksomhed deltage?</h2>
-    <div class="grid grid-cols-3 grid-rows-2 gap-2">
+    <div class="grid lg:grid-cols-3 grid-rows-2 gap-5">
       <div class="flex flex-col items-center text-center justify-center">
         <img
           class="w-1/3 md:w-1.5/5"
@@ -44,7 +44,7 @@ import thumbsup from "../assets/images/thumbsup.webp";
           alt=""
         />
 
-        <p>
+        <p class="text-sm">
           Ved at tage fat på dit digitale fodaftryk direkte, reducerer du din
           organisations miljømæssige belastning og skaber i stedet en meget mere
           bæredygtig arbejdsproces.
@@ -56,7 +56,7 @@ import thumbsup from "../assets/images/thumbsup.webp";
           src="src/assets/images/tandhjul.svg"
           alt=""
         />
-        <p>
+        <p class="text-sm">
           Jo færre glemte sikkerhedskopier og ubrugte digitale systemer du har,
           desto færre ressourcer bruges på overvågning og kontrol af logs. Det
           medfører færre sikkerhedsrisici og mindre belastning på serverne.
@@ -68,7 +68,7 @@ import thumbsup from "../assets/images/thumbsup.webp";
           src="src/assets/images/tandhjul.svg"
           alt=""
         />
-        <p>
+        <p class="text-sm">
           For mange systemer eller halvgennemførte løsninger nedsætter
           effektiviteten. At have bedre organiserede og klare virtuelle kontorer
           hjælper med at øge medarbejdertilfredsheden og dermed effektiviteten.
@@ -80,7 +80,7 @@ import thumbsup from "../assets/images/thumbsup.webp";
           src="src/assets/images/tandhjul.svg"
           alt=""
         />
-        <p>
+        <p class="text-sm">
           At organisere og deltage i Digital Cleanup Day øger teamets moral og
           samhørighed. Det er en teambuilding-begivenhed – gratis, sjov og med
           en positiv social og miljømæssig indvirkning.
@@ -92,7 +92,7 @@ import thumbsup from "../assets/images/thumbsup.webp";
           src="src/assets/images/tandhjul.svg"
           alt=""
         />
-        <p>
+        <p class="text-sm">
           Digitalt affald er dyrt både for dig og for miljøet; hvert minut
           sendes 240 millioner e-mails, hvoraf 20% aldrig bliver åbnet. Pladsen
           optaget af sikkerhedskopier og ubrugte filer på serverne har en pris.
@@ -104,7 +104,7 @@ import thumbsup from "../assets/images/thumbsup.webp";
           src="src/assets/images/tandhjul.svg"
           alt=""
         />
-        <p>
+        <p class="text-sm">
           Ved at invitere andre organisationer til at deltage i digitale
           oprydninger hjælper du med at skabe opmærksomhed omkring problemet,
           hvilket sætter gang i diskussionen i samfundet om, hvordan vi kan løse
@@ -114,24 +114,22 @@ import thumbsup from "../assets/images/thumbsup.webp";
     </div>
   </SektionWhite>
 
-  <SektionBlue class="flex flex-col gap-2">
+  <SektionBlue class="flex lg:flex-col">
     <h2>Sådan reducerer du din organisations digitale fodaftryk</h2>
-    <div class="grid grid-cols-2 items-center">
-      <div class="p-10">
+    <div class="grid lg:grid-cols-2 items-center">
+      <div class="lg:p-10 order-2">
         <h3>TRIN 1</h3>
         <h3>Vær opmærksom på, hvad der er affald, og hvad der ikke er</h3><p>
           Digitalt affald kan være alt fra unødvendige kopier til glemte
-          sikkerhedskopier og kundedata opbevaret i årevis. Dit digitale
-          fodaftryk øges også ved at sende e-mails, bruge virtuelle
-          arbejdsområder uregelmæssigt, sikkerhedskopiere store filer på servere
-          i realtid, holde lange møder med videostreaming osv. En god måde at
-          begynde at finde ud af dette på er at lave en oversigt over, hvad der
-          er forretningskritisk, og hvilke optegnelser der kræves at blive
-          opbevaret af loven, efterfulgt af en vurdering af effektiviteten af
-          dine digitale procedurer.
+          sikkerhedskopier og gammel kundedata. Dit digitale fodaftryk øges også
+          ved at sende e-mails, bruge virtuelle arbejdsområder uregelmæssigt,
+          sikkerhedskopiere store filer på servere i realtid og holde lange
+          online møder. Lav en oversigt over, hvad der er forretningskritisk, og
+          hvilke optegnelser der kræves at blive opbevaret af loven, efterfulgt
+          af en vurdering af effektiviteten af dine digitale procedurer.
         </p>
       </div>
-      <div class="flex items-center justify-center">
+      <div class="flex p-10 order-1 items-center justify-center">
         <img
           class="w-1/3 md:w-1.5/5"
           src="src/assets/images/hvad_er_skrald.svg"
@@ -141,15 +139,15 @@ import thumbsup from "../assets/images/thumbsup.webp";
     </div>
 
     <div>
-      <div class="grid grid-cols-2 items-center">
-        <div class="flex items-center justify-center">
+      <div class="grid lg:grid-cols-2 items-center">
+        <div class="flex p-10 items-center justify-center">
           <img
             class="w-1/3 md:w-1.5/5"
             src="src/assets/images/kort.svg"
             alt=""
           />
         </div>
-        <div class="p-10">
+        <div class="lg:p-10">
           <h3>TRIN 2</h3>
           <h3>Kortlæg dit digitale affald</h3><p>
             Find ud af, hvor dit glemte digitale affald befinder sig: gennemgå
@@ -160,10 +158,10 @@ import thumbsup from "../assets/images/thumbsup.webp";
         </div>
       </div>
 
-      <div class="grid grid-cols-2 items-center">
-        <div class="p-10">
+      <div class="grid lg:grid-cols-2 items-center">
+        <div class="lg:p-10 order-2">
           <h3>TRIN 3</h3>
-          <h3>Vær opmærksom på, hvad der er affald, og hvad der ikke er</h3><p>
+          <h3>Organisér en digital oprydning</h3><p>
             Uddan dine medarbejdere om digitalt affald og organiser en digital
             oprydning med dit personale; du kan opfordre dem til at rydde op på
             deres personlige og virksomhedens enheder. Organiser en konkurrence,
@@ -173,7 +171,7 @@ import thumbsup from "../assets/images/thumbsup.webp";
             digitale ressourcer.
           </p>
         </div>
-        <div class="flex items-center justify-center">
+        <div class="flex p-10 order-1 items-center justify-center">
           <img
             class="w-1/3 md:w-1.5/5"
             src="src/assets/images/kollegaer.svg"
@@ -184,15 +182,16 @@ import thumbsup from "../assets/images/thumbsup.webp";
 
       <div>
         <h3>TRIN 4</h3>
-        <h3>Organisér en digital oprydning</h3>
+        <h3>
+          Implementer praksisser, der hjælper med at holde digitalt affald i
+          skak.
+        </h3>
         <p>
-          Uddan dine medarbejdere om digitalt affald og organiser en digital
-          oprydning med dit personale; du kan opfordre dem til at rydde op på
-          deres personlige og virksomhedens enheder. Organiser en konkurrence,
-          eller udfordr dine kolleger til at deltage. Fjern alt skrald og
-          opbevar det, der er forretningskritisk, på cloud-servere. Involver din
-          IT-afdeling i at finde løsninger, der kan reducere spild af digitale
-          ressourcer.
+          Automatiser sletning af udløbne filer, organiser det virtuelle
+          arbejdsområde på samme måde som et kontor, hold færre (og mere
+          effektive!) videomøder, sørg for, at du bruger dit virtuelle kontor
+          effektivt, uddan dine medarbejdere i digitale praksisser, og opgiv
+          systemer, der ikke tjener dig godt.
         </p>
       </div>
 
@@ -201,7 +200,7 @@ import thumbsup from "../assets/images/thumbsup.webp";
   >
 
   <SektionWhite>
-    <div class="grid grid-cols-3 m-10">
+    <div class="grid lg:grid-cols-3 m-10">
       <div class="col-span-2">
         <h3>Digital oprydning for enkeltpersoner</h3>
         <h2>Hvordan man laver en digital oprydning</h2>
@@ -213,8 +212,8 @@ import thumbsup from "../assets/images/thumbsup.webp";
   </SektionWhite>
 
   <SektionBlue>
-    <div class="grid grid-cols-2 items-center">
-      <div class="p-10">
+    <div class="grid lg:grid-cols-2 items-center">
+      <div class="lg:p-10 order-2">
         <h3 class="text-[#8BCAFC]">TRIN 1</h3>
         <h3>Ryd op i din smartphone</h3>
         <p>
@@ -236,15 +235,15 @@ import thumbsup from "../assets/images/thumbsup.webp";
         />
       </div>
     </div>
-    <div class="grid grid-cols-2 items-center">
-      <div class="flex items-center justify-center">
+    <div class="grid lg:grid-cols-2 items-center">
+      <div class="flex items-center justify-center p-10">
         <img
           class="w-1/3 md:w-1.5/5"
           src="src/assets/images/mange_filer.svg"
           alt=""
         />
       </div>
-      <div class="p-10">
+      <div class="lg:p-10">
         <h3 class="text-[#8BCAFC]">TRIN 2</h3>
         <h3>Ryd op i din computer hard drive</h3>
         <p>
@@ -255,8 +254,8 @@ import thumbsup from "../assets/images/thumbsup.webp";
         </p>
       </div>
     </div>
-    <div class="grid grid-cols-2 items-center gap-5">
-      <div class="p-10">
+    <div class="grid lg:grid-cols-2 items-center">
+      <div class="lg:p-10 order-2">
         <h3 class="text-[#8BCAFC]">TRIN 3</h3>
         <h3>Ryd op i din mailboks</h3>
         <p>
@@ -267,21 +266,17 @@ import thumbsup from "../assets/images/thumbsup.webp";
           slet-knappen.
         </p>
       </div>
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center order-1 p-10">
         <img
           class="w-1/3 md:w-1.5/5"
           src="src/assets/images/postkasse.svg"
           alt=""
         />
       </div>
-      <div class="flex items-center justify-center">
-        <img
-          class="w-1/3 md:w-1.5/5"
-          src="src/assets/images/nye_vaner.svg"
-          alt=""
-        />
-      </div>
-      <div class="p-10">
+    </div>
+
+    <div class="grid lg:grid-cols-2 items-center">
+      <div class="lg:p-10 order-2">
         <h3 class="text-[#8BCAFC]">STEP 4</h3>
         <h3>Lav nye vaner</h3>
         <p>
@@ -296,7 +291,15 @@ import thumbsup from "../assets/images/thumbsup.webp";
           dit miljømæssige fodaftryk!
         </p>
       </div>
+      <div class="flex items-center order-1 justify-center p-10">
+        <img
+          class="w-1/3 md:w-1.5/5"
+          src="src/assets/images/nye_vaner.svg"
+          alt=""
+        />
+      </div>
     </div>
-    <Button class="place-self-center">Del dine resultater</Button>
-  </SektionBlue>
+
+    <Button class="place-self-center">Del dine resultater</Button></SektionBlue
+  >
 </MainLayout>
