@@ -21,5 +21,5 @@ const sizeClasses = {
 
 <!-- Sæt classes for den pågældende knap sammen ved hjælp af Astro class:list -->
 <div>
-    <button href={href} type="button" class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot /></button>
+    <button  type="button" class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot /></button>
 </div>
