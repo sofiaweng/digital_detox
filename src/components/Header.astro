@@ -32,18 +32,29 @@ import whitelogo from "src/assets/images/white_logo.webp";
         <!-- <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button> -->
         </div>
         
-        <nav id="mobilmenu" class="flex flex-col content-center lg:hidden font-semibold text-[#052F45] bg-[#F7F7F7] " 
+        <nav id="mobilmenu" class="flex flex-col content-center lg:hidden font-semibold text-[#052F45] bg-[#F7F7F7]" 
         x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-        <ul >
-            <img class="w-1/3  absolute right-0" src="src/assets/images/bluepixels-up-right.svg" alt="pixels">
-        <li class="p-4 border-b-2"><a href="/howtoparticipate">SÅDAN DELTAGER DU</a></li>
-        <li class="p-4  border-b-2"><a href="/formular">REGISTRER DIT BIDRAG</a></li>
-        <li class="p-4  border-b-2"><a href="/ressourcer" >RESSOURCER</a></li>
-        <li class="p-4 border-b-2"><a href="#" >LÆRINGSCENTER</a></li>
-        <li class="p-4 border-b-2"><a href="#" >WORLD CLEANING DAY</a></li>
-         <img class="w-2/4  mt-2 " src="src/assets/images/bluepixels-down-left.svg" alt="pixels">
+        <ul>
+            <img class="w-1/3 absolute right-0" src="src/assets/images/bluepixels-up-right.svg" alt="pixels">
+            <li class="p-4 border-b-2">
+                <a href="/howtoparticipate" class="hover:text-customPink transition-all duration-300">SÅDAN DELTAGER DU</a>
+            </li>
+            <li class="p-4 border-b-2">
+                <a href="/formular" class="hover:text-customPink transition-all duration-300">REGISTRER DIT BIDRAG</a>
+            </li>
+            <li class="p-4 border-b-2">
+                <a href="/ressourcer" class="hover:text-customPink transition-all duration-300">RESSOURCER</a>
+            </li>
+            <li class="p-4 border-b-2">
+                <a href="#" class="hover:text-customPink transition-all duration-300">LÆRINGSCENTER</a>
+            </li>
+            <li class="p-4 border-b-2">
+                <a href="#" class="hover:text-customPink transition-all duration-300">WORLD CLEANING DAY</a>
+            </li>
+            <img class="w-2/4 mt-2" src="src/assets/images/bluepixels-down-left.svg" alt="pixels">
         </ul>
-        </nav>
+    </nav>
+    
         </div>
 </div>
 
