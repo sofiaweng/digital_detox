@@ -10,98 +10,145 @@ import SektionBlue from "../components/SektionBlue.astro";
 
 <MainLayout title="Titel">
   <section  class="bg-[#052F45] text-[#F7F7F7] relative">
-    <div class=" grid md:grid-cols-2 overflow-hidden ">
-      <div>
-     <img class="absolute w-1/5 md:w-32" src="src/assets/images/bluepixels-left.svg" alt="bluepixels left">
-        <img src="src/assets/images/heroimg.avif" alt="tre personer der kigger på mobil"></div>
-      <div class="p-4 self-center">
-        <h1 class="text-semibold">DIGITAL DETOX</h1>
-        <p>Digital Detox 2025 – Giv din digitale verden et grønt løft! Ryd op i dit digitale rod og skab plads til en mere bæredygtig fremtid. Markér 15. marts i kalenderen!</p>
-        <Button>DEL DIT BIDRAG</Button>      
+    <div class=" grid md:grid-cols-3  ">
+      <div class="col-span-2">
+     <img class="absolute w-1/5 md:w-32 " src="src/assets/images/bluepixels-left.svg" alt="bluepixels left">
+        <img src="src/assets/images/heroimg.webp" alt="tre personer der kigger på mobil"></div>
+      <div class="p-4 self-center  py-8">
+        <h1 class="text-semibold">DIGITAL DETOX DAG </h1>
+        <p class="py-2">Digital Detox dag 2025 – Giv din digitale verden et grønt løft! Ryd op i dit digitale rod og skab plads til en mere bæredygtig fremtid. Markér 15. marts i kalenderen!</p>
+        <Button>GEM DATO</Button>      
  
       </div>    
-<div class="" ><img class="w-1/3 md:w-1/5 absolute bottom-0 right-0"  src="src/assets/images/whitepixels-down-left.svg" alt=""></div>       
+<div class="" ><img class="w-1/4 md:w-1/5 absolute bottom-0 right-0"  src="src/assets/images/whitepixels-down-left.svg" alt=""></div>       
     </div>
 
   </section>
-  <SektionWhite>
-    <div>
-      <div>
-        <h3 >Hvad er</h3>
-        <h2 class="semibold">DIGITAL DETOX?</h2>
-      </div>
-      <div>
-        <p>Digitalt affald omfatter unødvendige e-mails, filer, apps og dubletter af fotos og videoer, som belaster den digitale verden. 
+    
+</section>
 
-          Ifølge Det Internationale Energiagentur kan lagring af 4 GB data på servere i et år forbruge 2 kWh energi og udlede 1 kg CO2, hvilket viser den miljømæssige påvirkning af digitalt affald.</p>
+<SektionWhite>
+  <div class=" md:grid md:grid-cols-3 py-5">
+    <div class="self-center" >
+      <h3 class="font-semibold  text-10">Hvad er</h3>
+      <h2 class=" text-4xl">DIGITAL DETOX?</h2>
+    </div>
+    <div class="col-span-2">
+      <p>
+        Digital Skraldedag er en dag dedikeret til at rydde op i vores digitale liv, på samme måde som vi rydder op i vores fysiske miljø på
+      <Link href="">World Cleanup Day.</Link></p>  
+        <br>
+<p class="pt-2"> Nu i sit femte år og organiseret af Let's Do It World, har Digital Skraldedag til formål at øge bevidstheden om digital forurening og opfordre både enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online tilstedeværelse.
+      </p>
+    </div>
+  </div>
+  <div class=" flex flex-row py-6 ">
+<div class=" p-2 pl-4 w-11/12 md:w-3/4  bg-[#052F45] md:flex md:flex-between md:gap-4 flex justify-items-center">
+  <img class="hidden md:block w-8" src="src/assets/images/ikoner/ikon-kalender.svg" alt="">
+  <p class="text-[#F7F7F7] flex items-center  ">Digital Skraldedag 2025 foregår den 15. marts.</p>
+</div>
+<img class="w-6" src="src/assets/images/bluepixels-left-v2.svg" alt="">
+</div>
+</SektionWhite>
+  <SektionBlue>
+    <h2 class="py-5">Hvorfor fjerne digital skrald?</h2>
+    <div class="py-5 flex-wrap  flex justify-evenly  gap-5 md:grid md:grid-cols-5">
+        <div class="w-5/12 text-center md:w-fit grid justify-items-center">
+        <img class="w-1/2" src="src/assets/images/ikoner/ikon-co2.svg" alt="co2 ikon">
+        <p>Hjælper med at reducere CO2-udledning</p>
+      </div>
+      <div  class="w-5/12 text-center md:w-fit grid justify-items-center">
+        <img class="w-1/2" src="src/assets/images/ikoner/ikon-devices.svg" alt="devices ikon">
+        <p>Forlænget levetid for dine enheder</p>
+      </div>
+      <div class="w-5/12 text-center md:w-fit grid justify-items-center">
+        <img class="w-1/2" src="src/assets/images/ikoner/ikon-mappe.svg" alt="mappeikon">
+        <p>Fremskynder og forenkler deling og finde af information</p>
+      </div>
+      <div class="w-5/12 text-center md:w-fit grid justify-items-center">
+        <img class="w-1/3" src="src/assets/images/ikoner/ikon-info.svg" alt="info lås">
+        <p>Reducerer sikkerhedsrisici ved datalagring</p>
+      </div>
+      <div class="w-5/12 text-center md:w-fit grid justify-items-center">
+        <img class="w-1/2" src="src/assets/images/ikoner/ikon-graf.svg" alt="grafer ikon">
+        <p>Øger disk- og serverkapaciteten, hvilket hjælper med at reducere omkostninger</p>
       </div>
     </div>
-  <div class="w-3/4 bg-[#052F45]">
-    <div class=""></div>
-    <p class="text-[#F7F7F7]">Digital Skraldedag 2025 foregår den 15. marts.</p>
-  </div>
-  </SektionWhite>
-  <SektionBlue>
-    <h2>Hvorfor fjerne digital skrald?</h2>
-    <div>
-      <img src="" alt="">
-      <p></p>
-    </div>
-    <div>
-      <img src="" alt="">
-      <p></p>
-    </div>
-    <div>
-      <img src="" alt="">
-      <p></p>
-    </div>
-    <div>
-      <img src="" alt="">
-      <p></p>
-    </div>
+    
+ 
   </SektionBlue>
   <SektionWhite>
     <h2>SÅDAN DELTAGER DU</h2>
-    <div>
-      <img src="" alt="">
+    <div class="py-5">
+      <div class="flex flex-row gap-2 items-center ">
+        <img class="w-10 " src="src/assets/images/blueikoner/ikon-person.svg" alt="">
       <Button>Individuel</Button>
-      <Button>Organisation</Button>
+    </div>
+    </div>
+    <div>
+      <div class="flex flex-row gap-2 items-center ">
+        <img class="w-10 " src="src/assets/images/blueikoner/ikon-organisation.svg" alt="">
+        <Button>Organisation</Button>
+      </div>
     </div>
   </SektionWhite>
   <SektionBlue>
-    <div>
-        <div>
+    <div class="md:grid md:grid-cols-2 gap-5">
+        <div class="block">
         <h3>Vidste du...?</h3>
         <h2>Digital skrald fakta</h2>
-        <ul>
-          <li></li>
-          <li></li>
+        <ul class="list-disc p-4 ">
+          <li class="py-2">Det kræver mere energi at mine for Bitcoin end hele New Zealand forbruger på et år! <span class="text-customPink">(a)</span>, <span class="text-customPink">(b)</span></li>
+          <li class="py-2">På blot ét år (2007) blev der skabt en zettabyte data globalt. I 2010 var dette fordoblet. I 2035 vil vi skabe mere end 2.000 zettabytes. For at udskrive én zettabyte data ville du have brug for papir fra 20 billioner træer. Der er kun omkring 3,5 billioner træer tilbage på planeten, så det er ikke muligt. <span class="text-customPink">(a)</span>, <span class="text-customPink">(b)</span></li>
+          <li class="py-2">I 2022 blev omkring 70 millioner servere brugt til at opbevare data. Hver enkelt medførte produktionen af 1-2 ton CO2. I det år blev omkring 20 millioner af dem til e-affald. <span class="text-customPink">(a)</span></li>
+          <li class="py-2">99% af al data blev skabt inden for de sidste 10 år. <span class="text-customPink">(a)</span></li>
+          <li class="py-2">Den ubegribelige forbrug af data i dag kræver 3 gange mere energi end alle solpaneler, verden kan producere! <span class="text-customPink">(a)</span></li>
+          <p class="text-customPink hover:text-customBlueLight underline transition-all duration-300">Læs mere</p>
         </ul>
         </div>
+      
         <!-- animating skraldespand -->
-<div class="">
-
-</div>
+      <div class="relative md:ml-5 aspect-[100/120]">
+        <div class="roll-in-top w-20 absolute aspect-[122.95/75.87] left-20 bottom-3">
+          <img src="src/assets/images/mail.svg"></img>
+        </div>
+        <div class="roll-in-top-2 w-20 absolute aspect-[122.95/75.87] left-28 bottom-5">
+          <img src="src/assets/images/mail.svg"></img>
+        </div>
+        <div class="roll-in-top-3 w-20 absolute aspect-[122.95/75.87] left-28 bottom-10">
+          <img src="src/assets/images/mail.svg"></img>
+        </div>
+<!-- bg-[url('src/assets/images/white-trashcan.svg')]  -->
+        <div class="aspect-[528.37/296.75] absolute bottom-0 w-5/6 right-5" >
+          <img src="src/assets/images/white-trashcan.svg"></img>
+        </div>
+      </div>
     </div>
-    
+    <p class="text-right text-xs md:ml-10 pt-12 ">
+      Kilder: <span class="text-customPink"> (a)</span>International Energy Agency; 
+      <span class="text-customPink">(b)</span> “Bitcoin Tracking To Consume More Energy Than NZ” – Energetics; 
+      <span class="text-customPink">(c)</span> Powering the Internet: Your Virtual Carbon Footprint – WebFX; 
+      <span class="text-customPink">(d)</span>Energuide.be; 
+      <span class="text-customPink">(e)</span>Demandsage
+    </p>
     
   </SektionBlue>
   <SektionWhite>
     <h2>Digital detox i tal</h2>
-    <div>
-      <div>
-        <img src="" alt="">
-        <h2>1.184.747</h2>
+    <div class="flex flex-col   items-center gap-5 py-6 md:flex-row md:justify-evenly md:gap-10">
+      <div class="w-1/3 md:w-1/6 text-center">
+        <img  src="src/assets/images/blueikoner/ikon-personer.svg" alt="">
+        <h2 class=" text-3xl py-2" >1.184.747</h2>
         <p>deltagere</p>
       </div>
-      <div>
-        <img src="" alt="">
-        <h2>14,5 M GB</h2>
+      <div class="w-1/3 md:w-1/6  text-center">
+        <img src="src/assets/images/blueikoner/ikon-mappedokumenter.svg"alt="">
+        <h2 class="text-3xl py-2">14,5 M GB</h2>
         <p>af data slettet</p>
       </div>
-      <div>
-        <img src="" alt="">
-        <h2>3.625 tons</h2>
+      <div class="w-1/3 md:w-1/6 text-center">
+        <img  src="src/assets/images/blueikoner/ikon-co2.svg" alt="">
+        <h2 class="text-3xl py-2">3.625 tons</h2>
         <p>af CO2-produktion forhindret årligt</p>
       </div>
     </div>
