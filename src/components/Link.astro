@@ -3,4 +3,4 @@
 const { href = "#", target = "_self" } = Astro.props;
 ---
 
-<a href={href} class="underline" target={target}><slot /></a>
+<a href={href} class="text-customPink hover:text-customBlueLight underline transition-all duration-300" target={target}><slot /></a>
