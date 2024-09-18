@@ -116,8 +116,8 @@ import thumbsup from "../assets/images/thumbsup.webp";
 
   <SektionBlue class="flex flex-col gap-2">
     <h2>Sådan reducerer du din organisations digitale fodaftryk</h2>
-    <div class="grid grid-cols-2 grid-rows-2 text-center gap-5">
-      <div>
+    <div class="grid grid-cols-2 items-center">
+      <div class="p-10">
         <h3>TRIN 1</h3>
         <h3>Vær opmærksom på, hvad der er affald, og hvad der ikke er</h3><p>
           Digitalt affald kan være alt fra unødvendige kopier til glemte
@@ -131,29 +131,57 @@ import thumbsup from "../assets/images/thumbsup.webp";
           dine digitale procedurer.
         </p>
       </div>
-      <div>
-        <h3>TRIN 2</h3>
-        <h3>Kortlæg dit digitale affald</h3>
-        <p>
-          Find ud af, hvor dit glemte digitale affald befinder sig: gennemgå
-          alle dine sikkerhedskopier, e-mail-indbakker og sendt-post, udløbne
-          optegnelser og dokumenter, alle data opbevaret på servere, og hvor
-          store filer opbevares.
-        </p>
+      <div class="flex items-center justify-center">
+        <img
+          class="w-1/3 md:w-1.5/5"
+          src="src/assets/images/hvad_er_skrald.svg"
+          alt=""
+        />
       </div>
-      <div>
-        <h3>TRIN 3</h3>
-        <h3>titel</h3>
-        <p>
-          Uddan dine medarbejdere om digitalt affald og organiser en digital
-          oprydning med dit personale; du kan opfordre dem til at rydde op på
-          deres personlige og virksomhedens enheder. Organiser en konkurrence,
-          eller udfordr dine kolleger til at deltage. Fjern alt skrald og
-          opbevar det, der er forretningskritisk, på cloud-servere. Involver din
-          IT-afdeling i at finde løsninger, der kan reducere spild af digitale
-          ressourcer.
-        </p>
+    </div>
+
+    <div>
+      <div class="grid grid-cols-2 items-center">
+        <div class="flex items-center justify-center">
+          <img
+            class="w-1/3 md:w-1.5/5"
+            src="src/assets/images/kort.svg"
+            alt=""
+          />
+        </div>
+        <div class="p-10">
+          <h3>TRIN 2</h3>
+          <h3>Kortlæg dit digitale affald</h3><p>
+            Find ud af, hvor dit glemte digitale affald befinder sig: gennemgå
+            alle dine sikkerhedskopier, e-mail-indbakker og sendt-post, udløbne
+            optegnelser og dokumenter, alle data opbevaret på servere, og hvor
+            store filer opbevares.
+          </p>
+        </div>
       </div>
+
+      <div class="grid grid-cols-2 items-center">
+        <div class="p-10">
+          <h3>TRIN 3</h3>
+          <h3>Vær opmærksom på, hvad der er affald, og hvad der ikke er</h3><p>
+            Uddan dine medarbejdere om digitalt affald og organiser en digital
+            oprydning med dit personale; du kan opfordre dem til at rydde op på
+            deres personlige og virksomhedens enheder. Organiser en konkurrence,
+            eller udfordr dine kolleger til at deltage. Fjern alt skrald og
+            opbevar det, der er forretningskritisk, på cloud-servere. Involver
+            din IT-afdeling i at finde løsninger, der kan reducere spild af
+            digitale ressourcer.
+          </p>
+        </div>
+        <div class="flex items-center justify-center">
+          <img
+            class="w-1/3 md:w-1.5/5"
+            src="src/assets/images/kollegaer.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
       <div>
         <h3>TRIN 4</h3>
         <h3>Organisér en digital oprydning</h3>
@@ -167,9 +195,10 @@ import thumbsup from "../assets/images/thumbsup.webp";
           ressourcer.
         </p>
       </div>
-    </div>
-    <Button>Del din organisations resultater</Button>
-  </SektionBlue>
+
+      <Button>Del din organisations resultater</Button>
+    </div></SektionBlue
+  >
 
   <SektionWhite>
     <div class="grid grid-cols-3 m-10">
