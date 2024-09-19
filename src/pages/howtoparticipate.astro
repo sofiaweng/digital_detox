@@ -27,8 +27,12 @@ import thumbsup from "../assets/images/thumbsup.webp";
     <div
       class="flex flex-col md:flex-row items-center justify-center gap-2 p-10"
     >
-      <Button><a href="#virksomheder">Til virksomheder</a></Button>
-      <Button><a href="#enkeltpersoner">Til enkeltpersoner</a></Button>
+      <Button variant="secondary"
+        ><a href="#virksomheder">Til virksomheder</a></Button
+      >
+      <Button variant="secondary"
+        ><a href="#enkeltpersoner">Til enkeltpersoner</a></Button
+      >
     </div>
   </SektionBlue>
 
@@ -176,21 +180,33 @@ import thumbsup from "../assets/images/thumbsup.webp";
       </div>
     </div>
 
-    <div class="mb-10">
-      <h3 class="text-customPink">TRIN 4</h3>
-      <h3>
-        Implementer praksisser, der hjælper med at holde digitalt affald i skak.
-      </h3>
-      <p>
-        Automatiser sletning af udløbne filer, organiser det virtuelle
-        arbejdsområde på samme måde som et kontor, hold færre (og mere
-        effektive!) videomøder, sørg for, at du bruger dit virtuelle kontor
-        effektivt, uddan dine medarbejdere i digitale praksisser, og opgiv
-        systemer, der ikke tjener dig godt.
-      </p>
+    <div class="grid md:grid-cols-2 items-center">
+      <div class="flex p-10 items-center justify-center">
+        <img
+          class="w-1/3 md:w-1.5/5"
+          src="/assets/images/ikoner/paere_hjul-hvid.svg"
+          alt=""
+        />
+      </div>
+      <div class="mb-10">
+        <h3 class="text-customPink">TRIN 4</h3>
+        <h3>
+          Implementer praksisser, der hjælper med at holde digitalt affald i
+          skak.
+        </h3>
+        <p>
+          Automatiser sletning af udløbne filer, organiser det virtuelle
+          arbejdsområde på samme måde som et kontor, hold færre (og mere
+          effektive!) videomøder, sørg for, at du bruger dit virtuelle kontor
+          effektivt, uddan dine medarbejdere i digitale praksisser, og opgiv
+          systemer, der ikke tjener dig godt.
+        </p>
+      </div>
     </div>
     <div class="flex items-center justify-center p-10">
-      <Button href="/formular">Del din organisations resultater</Button>
+      <Button variant="secondary">
+        <a href="/formular">Del din organisations resultater</a></Button
+      >
     </div>
   </SektionBlue>
 
@@ -299,7 +315,9 @@ import thumbsup from "../assets/images/thumbsup.webp";
       </div>
     </div>
     <div class="flex items-center justify-center">
-      <Button variant="secondary">Del dine resultater</Button>
+      <Button variant="secondary"
+        ><a href="/formular">Del dine resultater</a></Button
+      >
     </div></SektionBlue
   >
 </MainLayout>
