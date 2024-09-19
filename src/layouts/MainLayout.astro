@@ -15,7 +15,7 @@ const { title } = Astro.props;
 	</head>
 	<body class="bg-[#F7F7F7]">
 
-		<header class="">
+		<header class="sticky top-0 z-30 border-b-2 border-solid border-customPink">
 			<Header></Header>
 		</header>
 		
@@ -23,7 +23,7 @@ const { title } = Astro.props;
 			<slot />
 		</main>
 
-		<footer>
+		<footer class="border-t-2 border-solid border-customPink">
 			<Footer></Footer>
 		</footer>
 			
