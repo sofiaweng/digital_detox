@@ -2,40 +2,92 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
 import tailwind from "../tailwind.css";
-import 'animate.css';
+import "animate.css";
 ---
 
 <MainLayout>
-
-<section class="bg-customGray text-customBlue grid grid-cols-1 md:grid-cols-2">
+  <section
+    class="bg-customGray text-customBlue grid grid-cols-1 md:grid-cols-2"
+  >
     <!-- Pixels til venstre -->
     <div class="flex items-left justify-left">
-        <img
-            src="/src/assets/images/pixels.webp"
-            alt="Pixels"
-            class="w-1/2 md:w-2/3 h-auto max-w-xs transition-transform duration-500"
-        />
+      <img
+        src="/src/assets/images/pixels.webp"
+        alt="Pixels"
+        class="w-20 md:w-2/5 h-auto max-w-xs transition-transform duration-500"
+      />
     </div>
 
     <!-- Tekst til højre -->
     <div class="flex flex-col justify-center p-8">
-        <h1 class="text-4xl text-customBlue bg-customGray font-semibold uppercase pb-8">
-            Ressourcer og materialer
-        </h1>
-        <a href="https://drive.google.com/file/d/1LZAIsGLSJl7fOdqdp53YscYc0XTd2xv3/view" target="_blank" class="text-customPink underline mb-4 font-semibold">Retningslinjer for enkeltpersoner</a>  
-        <a href="https://drive.google.com/file/d/1ZUIJl_EztcJmYF7GVDFN1LMPRtqM_7nM/view" target="_blank" class="text-customPink underline mb-4 font-semibold">Retningslinjer for virksomheder</a>  
-        <a href="https://drive.google.com/file/d/1dDw_YexhYGTxQIKMqcLMLnyekOTkTpJ0/view" target="_blank" class="text-customPink underline mb-4 font-semibold">Retningslinjer for skoler</a>  
-        <a href="https://drive.google.com/file/d/1MRiPX57JrppZY4gwtKeKeCc0_rZX040P/view" target="_blank" class="text-customPink underline mb-4 font-semibold">Retningslinjer for kommuner</a>  
-        <a href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view" target="_blank" class="text-customPink underline mb-4 font-semibold">Sådan rydder du op på din computer og Drive</a>  
-        <a href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view" target="_blank" class="text-customPink underline mb-4 font-semibold">Sådan rydder du op i dine e-mails</a>  
-        <a href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view" target="_blank" class="text-customPink underline mb-4 font-semibold">Sådan rydder du op på din smartphone og tablet</a>  
-        <a href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?rtpof=true&sd=true&gid=631660431#gid=631660431" target="_blank" class="text-customPink underline mb-4 font-semibold">Deltagerdataindsamling 1</a>  
-        <a href="https://docs.google.com/spreadsheets/d/1k56qMJsp3zgDhlsCngBhdjaSHP_z9TqM/edit?usp=share_link&ouid=109229434652399341618&rtpof=true&sd=true" target="_blank" class="text-customPink underline mb-4 font-semibold">Deltagerdataindsamling 2</a>  
-        <a href="https://trello.com/b/YzROvY3M/digital-cleanup-day" target="_blank" class="text-customPink underline mb-4 font-semibold">Markedsføringsmateriale</a>  
+      <h1
+        class="text-4xl text-customBlue bg-customGray font-semibold uppercase pb-8"
+      >
+        Ressourcer og materialer
+      </h1>
+      <a
+        href="https://drive.google.com/file/d/1LZAIsGLSJl7fOdqdp53YscYc0XTd2xv3/view"
+        target="_blank"
+        class="text-customPink underline mb-4 font-semibold"
+        >Retningslinjer for enkeltpersoner</a
+      >
+      <a
+        href="https://drive.google.com/file/d/1ZUIJl_EztcJmYF7GVDFN1LMPRtqM_7nM/view"
+        target="_blank"
+        class="text-customPink underline mb-4 font-semibold"
+        >Retningslinjer for virksomheder</a
+      >
+      <a
+        href="https://drive.google.com/file/d/1dDw_YexhYGTxQIKMqcLMLnyekOTkTpJ0/view"
+        target="_blank"
+        class="text-customPink underline mb-4 font-semibold"
+        >Retningslinjer for skoler</a
+      >
+      <a
+        href="https://drive.google.com/file/d/1MRiPX57JrppZY4gwtKeKeCc0_rZX040P/view"
+        target="_blank"
+        class="text-customPink underline mb-4 font-semibold"
+        >Retningslinjer for kommuner</a
+      >
+      <a
+        href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view"
+        target="_blank"
+        class="text-customPink underline mb-4 font-semibold"
+        >Sådan rydder du op på din computer og Drive</a
+      >
+      <a
+        href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view"
+        target="_blank"
+        class="text-customPink underline mb-4 font-semibold"
+        >Sådan rydder du op i dine e-mails</a
+      >
+      <a
+        href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view"
+        target="_blank"
+        class="text-customPink underline mb-4 font-semibold"
+        >Sådan rydder du op på din smartphone og tablet</a
+      >
+      <a
+        href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?rtpof=true&sd=true&gid=631660431#gid=631660431"
+        target="_blank"
+        class="text-customPink underline mb-4 font-semibold"
+        >Deltagerdataindsamling 1</a
+      >
+      <a
+        href="https://docs.google.com/spreadsheets/d/1k56qMJsp3zgDhlsCngBhdjaSHP_z9TqM/edit?usp=share_link&ouid=109229434652399341618&rtpof=true&sd=true"
+        target="_blank"
+        class="text-customPink underline mb-4 font-semibold"
+        >Deltagerdataindsamling 2</a
+      >
+      <a
+        href="https://trello.com/b/YzROvY3M/digital-cleanup-day"
+        target="_blank"
+        class="text-customPink underline mb-4 font-semibold"
+        >Markedsføringsmateriale</a
+      >
     </div>
-</section>
+  </section>
 </MainLayout>
-
